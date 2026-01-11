@@ -33,20 +33,6 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
 .about h2 { text-align:center; font-size:2rem; color:#0f3d57; margin-bottom:2rem; }
 .about ul { list-style:disc; margin-left:2rem; }
 
-/* ===== ACHIEVEMENTS & SKILLS ===== */
-.achievements {
-    padding:4rem 2rem;
-    background:#eef6f8;
-}
-.achievements h2 {
-    text-align:center;
-    font-size:2rem;
-    color:#0f3d57;
-    margin-bottom:2rem;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
 /* Table / Scorecard Style */
 .achievement-table {
     display: grid;
@@ -78,33 +64,80 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
     color:#111;
 }
 
-/* Interests / Skills Grid */
-.interests-title {
+/* ===== SKILLS & INTERESTS FOOTBALL SCORECARD ===== */
+.skills-scorecard {
+    padding:4rem 2rem;
+    background:#f0f4f8;
+}
+.skills-scorecard h2 {
     text-align:center;
-    font-size:1.8rem;
+    font-size:2rem;
     color:#0f3d57;
-    margin:3rem 0 1.5rem;
+    margin-bottom:2rem;
     text-transform:uppercase;
+    letter-spacing:1px;
 }
-.interests-grid {
+
+/* Scorecard Grid */
+.scorecard-grid {
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
-    gap:1rem;
-    justify-items:center;
-}
-.interest-card {
-    background:#ffffff;
-    padding:1rem 1.2rem;
-    border-radius:10px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    grid-template-columns:1fr 120px;
+    border:2px solid #0f3d57;
+    border-radius:12px;
+    overflow:hidden;
+    font-family: 'Courier New', monospace;
     font-weight:500;
-    color:#0f3d57;
-    text-align:center;
+}
+
+/* Rows */
+.scorecard-row {
+    display:flex;
+    justify-content:space-between;
+    padding:0.8rem 1rem;
+    border-bottom:1px solid #0f3d57;
+    color:#fff;
     transition:0.3s;
 }
-.interest-card:hover {
-    transform:translateY(-3px);
-    box-shadow:0 6px 12px rgba(0,0,0,0.12);
+.scorecard-row:last-child {
+    border-bottom:none;
+}
+
+/* Skill Text */
+.scorecard-row .skill {
+    font-size:1rem;
+}
+
+/* Level / Stars */
+.scorecard-row .level {
+    font-size:1rem;
+    font-weight:bold;
+}
+
+/* Color Coding by Category */
+.scorecard-row.coding {
+    background:#1f77b4; /* Blue for coding/ML */
+}
+.scorecard-row.sports {
+    background:#2ca02c; /* Green for sports */
+}
+.scorecard-row.creative {
+    background:#ff7f0e; /* Orange for creative / design */
+}
+.scorecard-row.science {
+    background:#d62728; /* Red for academic / science */
+}
+
+/* Hover Effect */
+.scorecard-row:hover {
+    transform:translateY(-2px);
+    box-shadow:0 4px 8px rgba(0,0,0,0.12);
+    cursor:pointer;
+}
+
+/* Stars Styling */
+.scorecard-row .level {
+    font-family:'Courier New', monospace;
+    letter-spacing:2px;
 }
 /* ===== FOOTER ===== */
 .footer { padding:2rem; text-align:center; background:#0f3d57; color:#fff; }
