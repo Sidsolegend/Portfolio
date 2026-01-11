@@ -85,26 +85,21 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
 
 /* Scorecard Grid */
 .scorecard-grid {
-    display:grid;
-    grid-template-columns:1fr 120px;
+    display: flex;
+    flex-direction: column;
     border:2px solid #0f3d57;
     border-radius:12px;
     overflow:hidden;
     font-family: 'Courier New', monospace;
-    font-weight:500;
 }
-
-/* Rows */
 .scorecard-row {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     padding:0.8rem 1rem;
     border-bottom:1px solid #0f3d57;
-    color:#fff;
-    transition:0.3s;
 }
-.scorecard-row:last-child {
-    border-bottom:none;
+.scorecard-row .skill { flex: 1; }
+.scorecard-row .level { width: 120px; text-align:right; 
 }
 
 /* Skill Text */
@@ -123,13 +118,13 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
     background:#1f77b4; /* Blue for coding/ML */
 }
 .scorecard-row.sports {
-    background:#2ca02c; /* Green for sports */
+    background:#d62728; /* Red for sports */
 }
 .scorecard-row.creative {
     background:#ff7f0e; /* Orange for creative / design */
 }
 .scorecard-row.science {
-    background:#d62728; /* Red for academic / science */
+    background:#2ca02c; /* Green for academic / science */
 }
 
 /* Hover Effect */
@@ -167,4 +162,15 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
   margin: 1rem auto 0 auto;
   color: #333;
   line-height: 1.5;
+}
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
