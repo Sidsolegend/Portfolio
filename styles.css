@@ -33,25 +33,79 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
 .about h2 { text-align:center; font-size:2rem; color:#0f3d57; margin-bottom:2rem; }
 .about ul { list-style:disc; margin-left:2rem; }
 
-/* ===== ACHIEVEMENTS & INTERESTS ===== */
-.achievements { padding:4rem 2rem; background:#eef6f8; }
-.achievements h2 { text-align:center; font-size:2rem; color:#0f3d57; margin-bottom:2rem; }
+/* ===== ACHIEVEMENTS & SKILLS ===== */
+.achievements {
+    padding:4rem 2rem;
+    background:#eef6f8;
+}
+.achievements h2 {
+    text-align:center;
+    font-size:2rem;
+    color:#0f3d57;
+    margin-bottom:2rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
 
 /* Table / Scorecard Style */
-.achievement-table { display: grid; grid-template-columns: 0.5fr 2fr 3fr 1fr; gap:0; border:1px solid #ccc; border-radius:8px; overflow:hidden; }
-.table-header, .table-row { display: contents; }
-.table-header span, .table-row span { padding:0.8rem 1rem; border-bottom:1px solid #ccc; }
-.table-header span { background:#0f3d57; color:#fff; font-weight:600; text-transform:uppercase; }
-.table-row:nth-child(even) span { background:#f7faff; }
-.table-row:nth-child(odd) span { background:#ffffff; }
-.table-row span { color:#111; }
+.achievement-table {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 3fr 1fr;
+    border:1px solid #ccc;
+    border-radius:8px;
+    overflow:hidden;
+    font-size:0.9rem;
+}
+.table-header span,
+.table-row span {
+    padding:0.8rem 1rem;
+    border-bottom:1px solid #ccc;
+    display:block;
+}
+.table-header span {
+    background:#0f3d57;
+    color:#fff;
+    font-weight:600;
+    text-transform:uppercase;
+}
+.table-row:nth-child(even) span {
+    background:#f7faff;
+}
+.table-row:nth-child(odd) span {
+    background:#ffffff;
+}
+.table-row span {
+    color:#111;
+}
 
-/* Interests Cards */
-.interests-title { text-align:center; font-size:1.8rem; color:#0f3d57; margin:3rem 0 1.5rem; }
-.interests-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:1rem; justify-items:center; }
-.interest-card { background:#ffffff; padding:1rem 1.2rem; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.08); font-weight:500; color:#0f3d57; text-align:center; transition:0.3s; }
-.interest-card:hover { transform:translateY(-3px); box-shadow:0 6px 12px rgba(0,0,0,0.12); }
-
+/* Interests / Skills Grid */
+.interests-title {
+    text-align:center;
+    font-size:1.8rem;
+    color:#0f3d57;
+    margin:3rem 0 1.5rem;
+    text-transform:uppercase;
+}
+.interests-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+    gap:1rem;
+    justify-items:center;
+}
+.interest-card {
+    background:#ffffff;
+    padding:1rem 1.2rem;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    font-weight:500;
+    color:#0f3d57;
+    text-align:center;
+    transition:0.3s;
+}
+.interest-card:hover {
+    transform:translateY(-3px);
+    box-shadow:0 6px 12px rgba(0,0,0,0.12);
+}
 /* ===== FOOTER ===== */
 .footer { padding:2rem; text-align:center; background:#0f3d57; color:#fff; }
 .footer a { color:#a6e3e9; text-decoration:none; }
