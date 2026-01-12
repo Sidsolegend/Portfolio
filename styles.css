@@ -28,48 +28,55 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
 .project-card a { display:inline-block; margin-top:0.6rem; text-decoration:none; background:#0f3d57; color:#fff; padding:0.5rem 1rem; border-radius:5px; }
 .project-card a:hover { background:#08445c; }
 
-/* ===== ACHIEVEMENTS ===== */
+/* ===== ACHIEVEMENTS SECTION ===== */
 .achievements { 
-    padding: 4rem 2rem; /* same as projects */
-    background: #f1f8f9; /* same as projects */
+    padding: 4rem 2rem;
+    background: #f1f8f9; /* same as projects/skills */
+    text-align: center;   /* center the section heading */
 }
 
 .achievements h2 { 
-    text-align: center; 
     font-size: 2rem; 
     color: #0f3d57; 
-    margin-bottom: 2rem; 
-}
-
-/* Timeline rows and cards keep their existing styling */
-.timeline-container {
-    padding: 0 0 2rem 0; /* optional: same spacing style */
+    margin-bottom: 2rem;
 }
 
 .timeline-category {
-    margin: 1.5rem 0 0.8rem 1rem;
+    margin: 2rem 0 1rem 0; /* more vertical space above each category */
     color: #0f3d57;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;  /* center category headings */
 }
 
 .timeline-row {
     display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 0.5rem 1rem;
+    overflow-x: auto;        /* keep horizontal scroll */
+    justify-content: flex-start; /* cards start from left */
+    gap: 2rem;               /* spacing between cards */
+    padding: 1rem 0 2rem 0;  /* add more vertical spacing */
     scroll-behavior: smooth;
 }
 
+.timeline-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.timeline-row::-webkit-scrollbar-thumb {
+    background: #0f3d57;
+    border-radius: 4px;
+}
+
 .timeline-card {
-    min-width: 250px;
+    min-width: 250px;          /* same as before */
     background: #fff;
-    padding: 1.5rem; /* match project-card padding */
-    border-radius: 10px; /* match project-card */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* match project-card */
+    padding: 1.5rem;           /* same padding as project/skills */
+    border-radius: 10px;       /* same radius */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: transform 0.3s, box-shadow 0.3s;
-    flex-shrink: 0;
+    flex-shrink: 0;            /* ensures cards don’t shrink in scroll */
+    margin-bottom: 1.5rem;     /* spacing if wrap happens on smaller screens */
 }
 
 .timeline-card:hover {
@@ -79,7 +86,7 @@ body { line-height:1.6; color:#111; background:#f9f9f9; }
 
 .timeline-card h4 {
     color: #0f3d57;
-    margin-bottom: 0.8rem; /* same as project-card h3 spacing */
+    margin-bottom: 0.8rem;
     font-size: 1.05rem;
 }
 
