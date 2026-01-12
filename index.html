@@ -3,162 +3,255 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidsolegend Lab | AI & Molecular Biology</title>
+  <title>Sidsolegend Portfolio - Molecular Biology & AI</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="container">
-    <div class="nav-brand">
-      <i class="fas fa-flask"></i>
-      <span>Sidsolegend Lab</span>
-    </div>
-    <ul class="nav-menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#timeline">Timeline</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="about" class="hero">
-  <h1>Sidsolegend</h1>
-  <p class="subtitle">Molecular Biology • Bioinformatics • AI Research</p>
-  <p class="intro">
-    I explore the intersection of biology and artificial intelligence — from genomic ML models
-    to accessibility-focused applications. I enjoy building research-driven projects that turn
-    complex biological data into real-world impact.
-  </p>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-  <h2>Research & AI Projects</h2>
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>Sign Language → English Converter</h3>
-      <ul>
-        <li>GIIS Hackathon 2025 — 🥇 First Place</li>
-        <li>Accessibility & Dyslexia Friendly</li>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <i class="fas fa-flask"></i>
+        <span>Sidsolegend Lab</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="https://github.com/Sidsolegend/giishack" target="_blank">GitHub</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
     </div>
+  </nav>
 
-    <div class="project-card">
-      <h3>Realtime AI Assistant</h3>
-      <ul>
-        <li>Voice-based automation</li>
-        <li>Python, NLP, system control</li>
-      </ul>
-      <a href="https://github.com/Sidsolegend/JARVIS" target="_blank">GitHub</a>
+  <!-- HERO / ABOUT -->
+  <section id="about" class="hero fade-in">
+    <h1>Sidsolegend</h1>
+    <p>Molecular Biology & Bioinformatics Enthusiast | AI & Machine Learning in Life Sciences</p>
+    <p class="intro">
+      Passionate about bridging biology and technology, I explore how AI and coding can solve real-world biological problems. 
+      From building predictive ML models for genomic data to creating accessibility-focused applications, I love turning complex ideas into practical projects.
+    </p>
+  </section>
+
+  <!-- RESEARCH & AI PROJECTS -->
+  <section id="projects" class="projects fade-in">
+    <h2>Research & AI Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Sign Language → English Converter</h3>
+        <ul>
+          <li>GIIS Hackathon 2025 - First Place</li>
+          <li>Accessibility & Dyslexia friendly</li>
+        </ul>
+        <a href="https://github.com/Sidsolegend/giishack.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Realtime AI Assistant</h3>
+        <ul>
+          <li>Python-based personal assistant</li>
+          <li>Voice commands & automation</li>
+        </ul>
+        <a href="https://github.com/Sidsolegend/JARVIS.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Bacterial DNA ML Model</h3>
+        <ul>
+          <li>Grade 11 self project</li>
+          <li>Genome promoter predictor</li>
+        </ul>
+        <a href="https://github.com/Sidsolegend/Bacterial-Promoter-Classification.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Fitness App - HealthSync</h3>
+        <ul>
+          <li>GIIS Hackathon 2024</li>
+          <li>Health & Wellness App</li>
+        </ul>
+        <a href="https://github.com/Sidsolegend/HealthSync.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>BrainGuard - Alzheimer’s Detection AI</h3>
+        <ul>
+          <li>Hack4Health Hackathon</li>
+          <li>ML model for MRI brain scans</li>
+        </ul>
+        <a href="https://github.com/Sidsolegend/BrainGuard.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>Bacterial Promoter Classification</h3>
-      <ul>
-        <li>ML-based genomic predictor</li>
-        <li>Bioinformatics focused</li>
-      </ul>
-      <a href="https://github.com/Sidsolegend/Bacterial-Promoter-Classification" target="_blank">GitHub</a>
+  <!-- ACHIEVEMENTS TIMELINE -->
+  <section id="achievements" class="achievements fade-in">
+    <h2>Achievements & Experiences</h2>
+    <div class="timeline-container">
+      <div class="timeline">
+        <!-- Each achievement -->
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>Bacterial DNA ML Model</h3>
+            <p>Self project – Genome promoter predictor. <a href="https://github.com/Sidsolegend/Bacterial-Promoter-Classification.git" target="_blank">GitHub</a></p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>GIIS Hackathon 2024 - Health</h3>
+            <p>Created a Fitness App</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>IIT Madras - Bioengineering Course</h3>
+            <p>3 months online course, certificate achieved</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>FreeCodeCamp</h3>
+            <p>HTML & CSS online certificate program</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>IIT Madras - Maths Unplugged</h3>
+            <p>3-4 months online course, final score 92/100</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>PULSE - Applied Physics Club</h3>
+            <p>VP – Organized Real World Challenges Convention & interschool competitions, invited peers/juniors to participate</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>Head Academics - Math & Computing Club</h3>
+            <p>Leadership role for club activities</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>Aviation & Astronomy Club</h3>
+            <p>Organizing Committee – Finance & logistics team</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>School MUNs</h3>
+            <p>4 MUNs – Delegate, Crisis Committee – Verbal Commendation</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 11</div>
+          <div class="content">
+            <h3>GIIS Law Summit - Mock Trials</h3>
+            <p>Delegate & Volunteer (Event Photographer)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 10</div>
+          <div class="content">
+            <h3>AI Assistant</h3>
+            <p>Created using Python</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="date">Grade 10</div>
+          <div class="content">
+            <h3>Real World Challenges Convention</h3>
+            <p>Maze-navigating robot – Team event (3 people) – Won</p>
+          </div>
+        </div>
+        <!-- Continue adding all remaining achievements in similar <div class="timeline-item"> blocks -->
+      </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>BrainGuard — Alzheimer’s AI</h3>
-      <ul>
-        <li>MRI-based ML detection</li>
-        <li>Healthcare AI</li>
-      </ul>
-      <a href="https://github.com/Sidsolegend/BrainGuard" target="_blank">GitHub</a>
+  <!-- SKILLS & INTERESTS -->
+  <section id="skills" class="skills-scorecard fade-in">
+    <h2>Skills & Interests</h2>
+    <div class="scorecard-grid">
+      <div class="scorecard-row coding" onclick="toggleInfo(this)">
+        <span class="skill">Python / ML / AI</span>
+        <span class="level">★★★★★</span>
+      </div>
+      <div class="info-box">I love building predictive models, exploring AI in biology and healthcare, and experimenting with Python for problem solving.</div>
+
+      <div class="scorecard-row coding" onclick="toggleInfo(this)">
+        <span class="skill">Web Development (HTML, CSS, JS)</span>
+        <span class="level">★★★★☆</span>
+      </div>
+      <div class="info-box">I enjoy creating interactive websites and UI projects that combine design with functionality.</div>
+
+      <div class="scorecard-row sports" onclick="toggleInfo(this)">
+        <span class="skill">Cricket</span>
+        <span class="level">★★★☆☆</span>
+      </div>
+      <div class="info-box">Cricket teaches strategy, teamwork, and focus – skills I use in both academics and coding.</div>
+
+      <div class="scorecard-row sports" onclick="toggleInfo(this)">
+        <span class="skill">Football</span>
+        <span class="level">★★★☆☆</span>
+      </div>
+      <div class="info-box">I love playing football for fun and physical fitness; it also builds quick decision-making.</div>
+
+      <div class="scorecard-row sports" onclick="toggleInfo(this)">
+        <span class="skill">Swimming</span>
+        <span class="level">★★★★☆</span>
+      </div>
+      <div class="info-box">Swimming helps me maintain endurance and clear my mind.</div>
+
+      <div class="scorecard-row sports" onclick="toggleInfo(this)">
+        <span class="skill">Krav Maga</span>
+        <span class="level">★★★☆☆</span>
+      </div>
+      <div class="info-box">I practice Krav Maga for self-defense, discipline, and focus.</div>
+
+      <div class="scorecard-row creative" onclick="toggleInfo(this)">
+        <span class="skill">Photography</span>
+        <span class="level">★★★★☆</span>
+      </div>
+      <div class="info-box">Photography allows me to capture moments, observe details, and express creativity visually.</div>
+
+      <div class="scorecard-row creative" onclick="toggleInfo(this)">
+        <span class="skill">CAD & Design</span>
+        <span class="level">★★★☆☆</span>
+      </div>
+      <div class="info-box">Designing in CAD helps me understand structures, creativity, and precision.</div>
+
+      <div class="scorecard-row science" onclick="toggleInfo(this)">
+        <span class="skill">Bioinformatics / Molecular Biology</span>
+        <span class="level">★★★★☆</span>
+      </div>
+      <div class="info-box">I enjoy understanding biological data, genetics, and applying computation to solve biological problems.</div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- CONTACT -->
+  <section id="contact" class="projects fade-in">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sidbansal0901@gmail.com">sidbansal0901@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Sidsolegend" target="_blank">github.com/Sidsolegend</a></p>
+  </section>
 
-<!-- TIMELINE -->
-<section id="timeline" class="timeline-section">
-  <h2>Academic & Project Timeline</h2>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Sidsolegend</p>
+  </footer>
 
-  <div class="timeline">
-    <div class="timeline-card">
-      <span class="year">Grade 10</span>
-      <p>AI Assistant built using Python</p>
-      <p>ICE Distinction (Cambridge IGCSE)</p>
-    </div>
-
-    <div class="timeline-card">
-      <span class="year">Grade 11</span>
-      <p>Bacterial DNA ML Project</p>
-      <p>IIT Madras Bioengineering Course</p>
-    </div>
-
-    <div class="timeline-card highlight">
-      <span class="year">2024</span>
-      <p>GIIS Hackathon — HealthSync</p>
-    </div>
-
-    <div class="timeline-card highlight">
-      <span class="year">2025</span>
-      <p>GIIS Hackathon — 🥇 Winner</p>
-      <p>Sign Language Translator</p>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="skills-section">
-  <h2>Skills & Interests</h2>
-
-  <div class="skills-grid">
-
-    <div class="skill-card coding" onclick="toggleSkill(this)">
-      <h3>Python & ML</h3>
-      <span>★★★★★</span>
-      <p class="skill-desc">Used for AI assistants, genomic ML models, and research automation.</p>
-    </div>
-
-    <div class="skill-card science" onclick="toggleSkill(this)">
-      <h3>Bioinformatics</h3>
-      <span>★★★★☆</span>
-      <p class="skill-desc">Strong interest in DNA analysis, promoters, and biological datasets.</p>
-    </div>
-
-    <div class="skill-card sports" onclick="toggleSkill(this)">
-      <h3>Cricket</h3>
-      <span>★★★☆☆</span>
-      <p class="skill-desc">Team sport that builds strategy, leadership, and focus.</p>
-    </div>
-
-    <div class="skill-card creative" onclick="toggleSkill(this)">
-      <h3>Photography</h3>
-      <span>★★★★☆</span>
-      <p class="skill-desc">Creative outlet — wildlife, sunset, and competition photography.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:sidbansal0901@gmail.com">sidbansal0901@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/Sidsolegend" target="_blank">Sidsolegend</a></p>
-</section>
-
-<footer class="footer">
-  <p>© 2026 Sidsolegend</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
