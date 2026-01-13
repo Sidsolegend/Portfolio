@@ -1,64 +1,52 @@
-/* ===== HAMBURGER MENU TOGGLE ===== */
-function toggleMenu() {
-  const menu = document.querySelector('.nav-menu');
-  menu.classList.toggle('active');
-}
-
-/* ===== SMOOTH SCROLL FOR NAV LINKS ===== */
-document.querySelectorAll('.nav-menu a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    targetSection.scrollIntoView({ behavior: 'smooth' });
-
-    // Close menu on mobile after clicking
+/* ===== OBSERVER FOR FADE-IN ANIMATIONS ===== */
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2
+  };
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, observerOptions);
+  
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+  
+  /* ===== MOBILE MENU ===== */
+  function toggleMenu() {
     const menu = document.querySelector('.nav-menu');
-    if (menu.classList.contains('active')) {
-      menu.classList.remove('active');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    
+    // Animate hamburger lines
+    // You can add more complex hamburger animation classes here if desired
+  }
+  
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-menu').classList.remove('active');
+    });
+  });
+  
+  /* ===== NAVBAR SCROLL HIDE/SHOW ===== */
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+  
+  window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      // Scrolling Down
+      navbar.style.top = '-80px';
+    } else {
+      // Scrolling Up
+      navbar.style.top = '0';
     }
+    lastScrollTop = scrollTop;
   });
-});
-
-/* ===== SCROLL HIGHLIGHT NAV ===== */
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-menu a');
-
-window.addEventListener('scroll', () => {
-  let current = '';
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80; // Offset for navbar height
-    const sectionHeight = section.clientHeight;
-
-    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove('active-link');
-    if (link.getAttribute('href') === '#' + current) {
-      link.classList.add('active-link');
-    }
-  });
-});
-/* ===== FADE-IN ON SCROLL ===== */
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOptions = {
-  threshold: 0.2,
-  rootMargin: "0px 0px -50px 0px"
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add('show');
-    appearOnScroll.unobserve(entry.target);
-  });
-}, appearOptions);
-
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
-});
