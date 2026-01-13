@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidsolegend Portfolio - Molecular Biology & AI</title>
+  <title>Sidsolegend | Molecular Biology & AI</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Fonts can be loaded here if we were using Google Fonts, using system fonts for performance per plan -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -12,12 +13,13 @@
   <nav class="navbar">
     <div class="container">
       <div class="nav-brand">
-        <i class="fas fa-flask"></i>
-        <span>Portfolio</span>
+        <i class="fas fa-dna"></i>
+        <span>Sidsolegend</span>
       </div>
       <ul class="nav-menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#achievements">Journey</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -26,17 +28,18 @@
       </div>
     </div>
   </nav>
-
-  <!-- HERO / ABOUT -->
-  <section id="about" class="hero">
-  <h1>Sidsolegend</h1>
-  <p>Molecular Biology & Bioinformatics Enthusiast | AI & Machine Learning in Life Sciences</p>
-  <p class="intro">
-    Hi, I am Siddharth. Passionate about bridging biology and technology, I explore how AI and coding can solve real-world biological problems. 
-    From building predictive ML models for genomic data to creating accessibility-focused applications, I love turning complex ideas into practical projects.
-  </p>
-</section>
-
+  <!-- HERO -->
+  <section id="about" class="hero fade-in">
+    <p class="intro-greeting">Hi, my name is</p>
+    <h1>Siddharth.</h1>
+    <h2>I decode biology with code.</h2>
+    <p class="intro">
+      I’m a Molecular Biology & Bioinformatics enthusiast bridging the gap between life sciences and artificial
+      intelligence.
+      I build predictive ML models, accessibility-first applications, and explore the genomic frontier.
+    </p>
+    <a href="#projects" class="cta-btn">Check out my work</a>
+  </section>
   <!-- PROJECTS -->
   <section id="projects" class="projects fade-in">
     <h2>Research & AI Projects</h2>
@@ -48,9 +51,15 @@
           <li>GIIS Hackathon 2025 - First Place</li>
           <li>Accessibility & Dyslexia friendly</li>
         </ul>
+        <div class="tech-stack-list">
+          <ul>
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>TensorFlow</li>
+          </ul>
+        </div>
         <a href="https://github.com/Sidsolegend/giishack.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
-
       <!-- AI Assistant -->
       <div class="project-card">
         <h3>Realtime AI Assistant</h3>
@@ -58,9 +67,15 @@
           <li>Python-based personal assistant</li>
           <li>Voice commands & automation</li>
         </ul>
+        <div class="tech-stack-list">
+          <ul>
+            <li>Python</li>
+            <li>SpeechRec</li>
+            <li>NLP</li>
+          </ul>
+        </div>
         <a href="https://github.com/Sidsolegend/JARVIS.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
-
       <!-- Bacterial Promoter Classification -->
       <div class="project-card">
         <h3>Bacterial DNA ML Model</h3>
@@ -68,9 +83,16 @@
           <li>Grade 11 self project</li>
           <li>Genome promoter predictor</li>
         </ul>
-        <a href="https://github.com/Sidsolegend/Bacterial-Promoter-Classification.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <div class="tech-stack-list">
+          <ul>
+            <li>Bioinformatics</li>
+            <li>Scikit-Learn</li>
+            <li>Genomics</li>
+          </ul>
+        </div>
+        <a href="https://github.com/Sidsolegend/Bacterial-Promoter-Classification.git" target="_blank"><i
+            class="fab fa-github"></i> GitHub</a>
       </div>
-
       <!-- Hackathon 2024 -->
       <div class="project-card">
         <h3>Fitness App - HealthSync</h3>
@@ -78,9 +100,15 @@
           <li>GIIS Hackathon 2024</li>
           <li>Health & Wellness App</li>
         </ul>
+        <div class="tech-stack-list">
+          <ul>
+            <li>Flutter</li>
+            <li>Firebase</li>
+            <li>Health Kit</li>
+          </ul>
+        </div>
         <a href="https://github.com/Sidsolegend/HealthSync.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
-
       <!-- AI for Alzheimer’s -->
       <div class="project-card">
         <h3>BrainGuard - Alzheimer’s Detection AI</h3>
@@ -88,232 +116,238 @@
           <li>Hack4Health Hackathon</li>
           <li>ML model for MRI brain scans</li>
         </ul>
+        <div class="tech-stack-list">
+          <ul>
+            <li>PyTorch</li>
+            <li>CNN</li>
+            <li>Medical Imaging</li>
+          </ul>
+        </div>
         <a href="https://github.com/Sidsolegend/BrainGuard.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
   </section>
-    
-   <!-- ===== ACHIEVEMENTS TIMELINE ===== -->
-<section id="achievements" class="achievements fade-in">
-  <h2>           Achievements & Experiences</h2>
-
-  <div class="timeline-container">
-
-    <!-- CATEGORY: Projects -->
-    <h3 class="timeline-category">Projects & Personal Work</h3>
-    <div class="timeline-row">
-      <div class="timeline-card">
-        <h4>Bacterial DNA ML Model</h4>
-        <p>Grade 11 | Self Project | Genome promoter predictor</p>
-        <a href="https://github.com/Sidsolegend/Bacterial-Promoter-Classification.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  <!-- ===== ACHIEVEMENTS TIMELINE ===== -->
+  <section id="achievements" class="achievements fade-in">
+    <h2> Achievements & Experiences</h2>
+    <div class="timeline-container">
+      <!-- CATEGORY: Projects -->
+      <h3 class="timeline-category">Projects & Personal Work</h3>
+      <div class="timeline-row">
+        <div class="timeline-card">
+          <h4>Sign Language → English Converter</h4>
+          <p>GIIS Hackathon 2025 | First Place</p>
+          <a href="https://github.com/Sidsolegend/giishack.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="timeline-card">
+          <h4>Bacterial DNA ML Model</h4>
+          <p>Grade 11 | Self Project | Genome promoter predictor</p>
+          <a href="https://github.com/Sidsolegend/Bacterial-Promoter-Classification.git" target="_blank"><i
+              class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="timeline-card">
+          <h4>AI Assistant</h4>
+          <p>Grade 10 | Created using Python</p>
+          <a href="https://github.com/Sidsolegend/JARVIS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="timeline-card">
+          <h4>Fitness App - HealthSync</h4>
+          <p>GIIS Hackathon 2024 | Health App</p>
+          <a href="https://github.com/Sidsolegend/HealthSync.git" target="_blank"><i class="fab fa-github"></i>
+            GitHub</a>
+        </div>
+        <div class="timeline-card">
+          <h4>BrainGuard - Alzheimer’s Detection AI</h4>
+          <p>Hack4Health | ML model for MRI scans</p>
+          <a href="https://github.com/Sidsolegend/BrainGuard.git" target="_blank"><i class="fab fa-github"></i>
+            GitHub</a>
+        </div>
       </div>
-      <div class="timeline-card">
-        <h4>AI Assistant</h4>
-        <p>Grade 10 | Created using Python</p>
-        <a href="https://github.com/Sidsolegend/JARVIS" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <!-- CATEGORY: Hackathons & Competitions -->
+      <h3 class="timeline-category">Hackathons & Competitions</h3>
+      <div class="timeline-row">
+        <div class="timeline-card">
+          <h4>GIIS Hackathon 2025</h4>
+          <p>Sign language → English converter | First Place | Grade 11</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Real World Challenges Convention</h4>
+          <p>Maze-navigating robot | Team Event | Grade 10 | First Place</p>
+        </div>
+        <div class="timeline-card">
+          <h4>GIIS EcoBiz Competition 2025</h4>
+        </div>
+        <div class="timeline-card">
+          <h4>Aeroforge</h4>
+          <p>(Aviation & Astronomy Club) | 2025</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Lift-off Competition</h4>
+          <p>(Aviation & Astronomy Club) | 2025 | 4th Position</p>
+        </div>
       </div>
-      <div class="timeline-card">
-        <h4>Fitness App - HealthSync</h4>
-        <p>GIIS Hackathon 2024 | Health App</p>
-        <a href="https://github.com/Sidsolegend/HealthSync.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <!-- CATEGORY: Clubs & Leadership -->
+      <h3 class="timeline-category">Clubs & Leadership</h3>
+      <div class="timeline-row">
+        <div class="timeline-card">
+          <h4>PULSE - Applied Physics Club</h4>
+          <p>VP | Organized interschool events & Real World Challenges</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Math & Computing Club</h4>
+          <p>Head Academics | Grade 11</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Tech Club</h4>
+          <p>Member | Grade 11</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Aviation & Astronomy Club</h4>
+          <p>Finance & Logistics | Organizing Committee</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Photography Club</h4>
+          <p>Event Photographer & Competition Winner</p>
+        </div>
       </div>
-      <div class="timeline-card">
-        <h4>BrainGuard - Alzheimer’s Detection AI</h4>
-        <p>Hack4Health | ML model for MRI scans</p>
-        <a href="https://github.com/Sidsolegend/BrainGuard.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <!-- CATEGORY: Academic Awards -->
+      <h3 class="timeline-category">Academic Awards & Certificates</h3>
+      <div class="timeline-row">
+        <div class="timeline-card">
+          <h4>ICE Distinction Certification</h4>
+          <p>IGCSE - Cambridge</p>
+        </div>
+        <div class="timeline-card">
+          <h4>APJ Abdul Kalam School Award</h4>
+          <p>Grade 10 | Academic Excellence | 2nd Prize</p>
+        </div>
+        <div class="timeline-card">
+          <h4>MJK Menon School Awards</h4>
+          <p>Grades 6-8 | Multiple Positions</p>
+        </div>
+        <div class="timeline-card">
+          <h4>8 Subject Trophies | IGCSE</h4>
+          <p>Physics 96 A*, Maths 99 A*, Add Maths 96 A*, Bio 95 A*, Chem 92 A*, CS 95 A*, English Lit 91 A*, Lang 92
+            A*, French 88 A</p>
+        </div>
+      </div>
+      <!-- CATEGORY: Sports & Hobbies -->
+      <h3 class="timeline-category">Sports & Hobbies</h3>
+      <div class="timeline-row">
+        <div class="timeline-card">
+          <h4>Swimming</h4>
+          <p>Gold Levels | Singapore & UK Curriculum</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Krav Maga</h4>
+          <p>Student at Kravist Singapore (2024-2027)</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Inter-House Cricket</h4>
+          <p>3rd Position | Vice Captain - Chrysanthemum House</p>
+        </div>
+        <div class="timeline-card">
+          <h4>Lifesaving 1-3 Training</h4>
+        </div>
+        <div class="timeline-card">
+          <h4>After-School Program - Cricket</h4>
+          <p>Extra training after School</p>
+        </div>
       </div>
     </div>
-
-    <!-- CATEGORY: Hackathons & Competitions -->
-    <h3 class="timeline-category">Hackathons & Competitions</h3>
-    <div class="timeline-row">
-      <div class="timeline-card">
-        <h4>GIIS Hackathon 2025</h4>
-        <p>Sign language → English converter | First Place | Grade 11</p>
+  </section>
+  <!-- ===== SKILLS & INTERESTS ===== -->
+  <section id="skills" class="projects fade-in">
+    <h2>Skills & Interests</h2>
+    <div class="projects-grid">
+      <!-- Coding / AI -->
+      <div class="project-card">
+        <h3>Python / ML / AI</h3>
+        <ul>
+          <li>Self-taught</li>
+          <li>Built ML models for biology projects</li>
+          <li>Love exploring AI for real-world biological problems</li>
+        </ul>
       </div>
-      <div class="timeline-card">
-        <h4>Real World Challenges Convention</h4>
-        <p>Maze-navigating robot | Team Event | Grade 10</p>
+      <div class="project-card">
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Created portfolio & web apps</li>
+          <li>Enjoy making interactive and clean interfaces</li>
+        </ul>
       </div>
-      <div class="timeline-card">
-        <h4>GIIS EcoBiz Competition 2025</h4>
+      <div class="project-card">
+        <h3>Robotics & Coding</h3>
+        <ul>
+          <li>Arduino & Python automation projects</li>
+          <li>Maze-navigating robots</li>
+          <li>Love building things that move and solve problems</li>
+        </ul>
       </div>
-      <div class="timeline-card">
-        <h4>Lift-off Competition (Aviation & Astronomy Club)</h4>
-        <p>2025 | 4th Position</p>
+      <!-- Sports -->
+      <div class="project-card">
+        <h3>Cricket</h3>
+        <ul>
+          <li>Vice Captain, Inter-House Tournament</li>
+          <li>After-school program</li>
+          <li>Enjoy teamwork and strategic gameplay</li>
+        </ul>
       </div>
-    </div>
-
-    <!-- CATEGORY: Clubs & Leadership -->
-    <h3 class="timeline-category">Clubs & Leadership</h3>
-    <div class="timeline-row">
-      <div class="timeline-card">
-        <h4>PULSE - Applied Physics Club</h4>
-        <p>VP | Organized interschool events & Real World Challenges</p>
+      <div class="project-card">
+        <h3>Swimming</h3>
+        <ul>
+          <li>Gold levels - Singapore & UK curriculum</li>
+          <li>Love staying active and challenging myself</li>
+        </ul>
       </div>
-      <div class="timeline-card">
-        <h4>Math & Computing Club</h4>
-        <p>Head Academics | Grade 11</p>
+      <div class="project-card">
+        <h3>Krav Maga</h3>
+        <ul>
+          <li>Training at Kravist Singapore (2024-2027)</li>
+          <li>Enjoy self-discipline and real-world combat skills</li>
+        </ul>
       </div>
-      <div class="timeline-card">
-        <h4>Aviation & Astronomy Club</h4>
-        <p>Finance & Logistics | Organizing Committee</p>
+      <!-- Creative -->
+      <div class="project-card">
+        <h3>Photography</h3>
+        <ul>
+          <li>Club competitions winner 2024 & 2025</li>
+          <li>Event photography experience</li>
+          <li>Love capturing stories and moments</li>
+        </ul>
       </div>
-      <div class="timeline-card">
-        <h4>Photography Club</h4>
-        <p>Event Photographer & Competition Winner</p>
+      <div class="project-card">
+        <h3>CAD & Design</h3>
+        <ul>
+          <li>Technical and creative projects</li>
+          <li>Enjoy designing and prototyping ideas</li>
+        </ul>
       </div>
-    </div>
-
-    <!-- CATEGORY: Academic Awards -->
-    <h3 class="timeline-category">Academic Awards & Certificates</h3>
-    <div class="timeline-row">
-      <div class="timeline-card">
-        <h4>ICE Distinction Certification</h4>
-        <p>IGCSE - Cambridge</p>
-      </div>
-      <div class="timeline-card">
-        <h4>APJ Abdul Kalam School Award</h4>
-        <p>Grade 10 | Academic Excellence | 2nd Prize</p>
-      </div>
-      <div class="timeline-card">
-        <h4>MJK Menon School Awards</h4>
-        <p>Grades 6-8 | Multiple Positions</p>
-      </div>
-      <div class="timeline-card">
-        <h4>8 Subject Trophies | IGCSE</h4>
-        <p>Physics 96 A*, Maths 99 A*, Add Maths 96 A*, Bio 95 A*, Chem 92 A*, CS 95 A*, English Lit 91 A*, Lang 92 A*, French 88 A</p>
-      </div>
-    </div>
-
-    <!-- CATEGORY: Sports & Hobbies -->
-    <h3 class="timeline-category">Sports & Hobbies</h3>
-    <div class="timeline-row">
-      <div class="timeline-card">
-        <h4>Swimming</h4>
-        <p>Gold Levels | Singapore & UK Curriculum</p>
-      </div>
-      <div class="timeline-card">
-        <h4>Krav Maga</h4>
-        <p>Student at Kravist Singapore (2024-2027)</p>
-      </div>
-      <div class="timeline-card">
-        <h4>Inter-House Cricket</h4>
-        <p>3rd Position | Vice Captain - Chrysanthemum House</p>
-      </div>
-      <div class="timeline-card">
-        <h4>Lifesaving 1-3 Training</h4>
-      </div>
-      <div class="timeline-card">
-        <h4>After-School Program - Cricket</h4>
-        <p>Extra training after School</p>
+      <!-- Academic / Science -->
+      <div class="project-card">
+        <h3>Bioinformatics & Molecular Biology</h3>
+        <ul>
+          <li>Self-learning & school projects</li>
+          <li>ML models applied to biological data</li>
+          <li>Love combining coding with biology for research</li>
+        </ul>
       </div>
     </div>
-
-  </div>
-</section>
-<!-- ===== SKILLS & INTERESTS ===== -->
-<section id="skills" class="projects fade-in">
-  <h2>Skills & Interests</h2>
-  <div class="projects-grid">
-
-    <!-- Coding / AI -->
-    <div class="project-card">
-      <h3>Python / ML / AI</h3>
-      <ul>
-        <li>Self-taught</li>
-        <li>Built ML models for biology projects</li>
-        <li>Love exploring AI for real-world biological problems</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Web Development</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Created portfolio & web apps</li>
-        <li>Enjoy making interactive and clean interfaces</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Robotics & Coding</h3>
-      <ul>
-        <li>Arduino & Python automation projects</li>
-        <li>Maze-navigating robots</li>
-        <li>Love building things that move and solve problems</li>
-      </ul>
-    </div>
-
-    <!-- Sports -->
-    <div class="project-card">
-      <h3>Cricket</h3>
-      <ul>
-        <li>Vice Captain, Inter-House Tournament</li>
-        <li>After-school program</li>
-        <li>Enjoy teamwork and strategic gameplay</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Swimming</h3>
-      <ul>
-        <li>Gold levels - Singapore & UK curriculum</li>
-        <li>Love staying active and challenging myself</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>Krav Maga</h3>
-      <ul>
-        <li>Training at Kravist Singapore (2024-2027)</li>
-        <li>Enjoy self-discipline and real-world combat skills</li>
-      </ul>
-    </div>
-
-    <!-- Creative -->
-    <div class="project-card">
-      <h3>Photography</h3>
-      <ul>
-        <li>Club competitions winner 2024 & 2025</li>
-        <li>Event photography experience</li>
-        <li>Love capturing stories and moments</li>
-      </ul>
-    </div>
-
-    <div class="project-card">
-      <h3>CAD & Design</h3>
-      <ul>
-        <li>Technical and creative projects</li>
-        <li>Enjoy designing and prototyping ideas</li>
-      </ul>
-    </div>
-
-    <!-- Academic / Science -->
-    <div class="project-card">
-      <h3>Bioinformatics & Molecular Biology</h3>
-      <ul>
-        <li>Self-learning & school projects</li>
-        <li>ML models applied to biological data</li>
-        <li>Love combining coding with biology for research</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-  
+  </section>
   <!-- CONTACT -->
-  <section id="contact" class="projects">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sidbansal0901@gmail.com">sidbansal0901@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Sidsolegend" target="_blank">github.com/Sidsolegend</a></p>
+  <section id="contact" class="fade-in">
+    <h2>Get In Touch</h2>
+    <p>Whether you have a question or just want to say hi, my inbox is always open.</p>
+    <a class="email-link" href="mailto:sidbansal0901@gmail.com">Say Hello</a>
   </section>
-
   <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; 2026 Sidsolegend</p>
+    <p>Designed & Built by Sidsolegend</p>
+    <div style="margin-top:10px; font-size:1.2rem;">
+      <a href="https://github.com/Sidsolegend" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
